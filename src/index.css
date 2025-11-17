@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+@layer base {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: #fff;
+        background-color: #000;
+        font-family: "Inter", sans-serif;;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer ultilities {
+    .text-gradient {
+        background: linear-gradient(135deg, rgb(37,99,235)0%, rgb(249,115,22)100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+   .gradient-bg {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),   /* from-black/30 */
+    transparent,           /* via-transparent */
+    rgba(0, 0, 0, 0.8)     /* to-black/80 */
+  );
+
+ 
+
+}
+
+
+ .bg-gradient-colors {
+  /* to bottom-right = 135deg */
+  background: linear-gradient(135deg, #374151 0%, rgba(55, 65, 81, 0) 100%);
+}
+
+
+}
