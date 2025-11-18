@@ -2,7 +2,13 @@ import { useState } from "react";
 
 function Colors() {
   const colors = [
-    { id: "azul", name: "Titânio Azul", image: "/img/iphone-blue.jpg", colorsclass: "bg-blue-500" },
+   {
+  id: "azul",
+  name: "Titânio Azul",
+  image: "./img/iphone-blue.jpg",
+  colorsclass: "bg-blue-500"
+},
+
     {
       id: "silver",
       name: "Titânio silver",
@@ -31,7 +37,7 @@ function Colors() {
       storage: "128GB, 256GB, 512GB, 1TB",
       battery: "22 Horas de Vídeo",
       weight: "203 Gramas",
-      
+
     },
   ];
 
@@ -51,8 +57,9 @@ function Colors() {
               <img
                 src={colors.find((color) => color.id === selectedColor).image}
                 alt="imagem-iphone"
-                className="w-full  max-h-[500px] mx-auto"
-              ></img>
+                className="w-full max-h-[500px] mx-auto"
+              />
+
             </div>
 
 
@@ -64,25 +71,25 @@ function Colors() {
           </div>
         </div>
         <div className="flex justify-center items-center gap-4">
-       { colors.map(color => (
-        <button
-          key={color.id}
-          onClick={() => setSelectedColor(color.id)}
-          className={`relative transition-all duration-300 cursor-pointer`}
-          aria-label={color.name}
-        >
-          <div className={`w-16 h-16 rounded-full border-4  
+          {colors.map(color => (
+            <button
+              key={color.id}
+              onClick={() => setSelectedColor(color.id)}
+              className={`relative transition-all duration-300 cursor-pointer`}
+              aria-label={color.name}
+            >
+              <div className={`w-16 h-16 rounded-full border-4  
             ${color.colorsclass} 
-            ${selectedColor === color.id ? 'border-white' : 'border-gray-800'}`}></div> 
-        </button>
-       ))}
+            ${selectedColor === color.id ? 'border-white' : 'border-gray-800'}`}></div>
+            </button>
+          ))}
         </div>
 
 
         <div className=" grid md:grid-cols-2 mt-20 gap-8">
-          {models.map((model, index ) =>(
-            <div key={index} 
-            className="bg-gradient-colors rounded-3xl border border-gray-800 p-8 ">
+          {models.map((model, index) => (
+            <div key={index}
+              className="bg-gradient-colors rounded-3xl border border-gray-800 p-8 ">
 
               <div className="text-4xl mb-4">📱</div>
               <h3 className="text-2xl mb-3 font-bold">{model.name}</h3>
@@ -100,7 +107,7 @@ function Colors() {
         <div className="text-center mt-16">
           <button className="text-white bg-blue-600 hover:bg-blue-700 px-12 py-4 rounded-full mb-4 transition-colors duration-300 hover:scale-105 cursor-pointer fill-indigo-500 drop-shadow-lg drop-shadow-indigo-500/50">
             <a href="https://www.apple.com/br/">
-            Compre agora à partir de R$ 11.499,00
+              Compre agora à partir de R$ 11.499,00
             </a>
           </button>
           <p className="text-gray-500">Ou em até em 12x de R$ 958,25 sem juros </p>
