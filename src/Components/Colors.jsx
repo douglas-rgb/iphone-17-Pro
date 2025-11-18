@@ -6,7 +6,7 @@ function Colors() {
   id: "azul",
   name: "Titânio Azul",
   image: "./img/iphone-blue.jpg",
-  colorsclass: "bg-blue-500"
+  colorsclass: "bg-gray-800",
 },
 
     {
@@ -57,7 +57,7 @@ function Colors() {
               <img
                 src={colors.find((color) => color.id === selectedColor).image}
                 alt="imagem-iphone"
-                className="w-full max-h-[500px] mx-auto"
+                className="w-full max-h-[500px] mx-auto shadow-lg rounded-3xl object-contain "
               />
 
             </div>
