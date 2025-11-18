@@ -57,7 +57,7 @@ function Colors() {
               <img
                 src={colors.find((color) => color.id === selectedColor).image}
                 alt="imagem-iphone"
-                className="w-full max-h-[500px] mx-auto shadow-lg rounded-3xl object-contain "
+                className="w-full max-h-[500px] mx-auto "
               />
 
             </div>
