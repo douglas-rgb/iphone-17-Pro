@@ -12,13 +12,13 @@ function Colors() {
     {
       id: "silver",
       name: "Titânio silver",
-      image: "/img/iphone-silver.jpg",
+      image: "./img/iphone-silver.jpg",
       colorsclass: "bg-gray-300",
     },
     {
       id: "orange",
       name: "Titânio orange",
-      image: "/img/iphone-orange.jpg",
+      image: "./img/iphone-orange.jpg",
       colorsclass: "bg-orange-500",
     },
   ];
